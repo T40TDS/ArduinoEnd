@@ -37,7 +37,31 @@ void processSerial(String message){
   }
   
   if(portOpen = False){
-    if(message.equals("
+    if(message.equals("BgSrMsg"){
+      portOpen = true;
+    }
   }
+  
+  if (portOpen = true && portType = -1){
+      if(message.equals("SERIAL-GSM"){
+        portType = 1;
+      }
+      if(message.equals("SERIAL-LCD"){
+        portType = 2;
+      }
+  }
+
+}
+
+void lcdWrite(String message){
+     char inputC[message.length()-1];
+     for(int i = 0; i <= message.length()-1; i++){
+      inputC[i] = input.charAt(i);
+     }
+             
+     for(int i = 0; i <= message.length()-1; i++){
+      lcd.write(inputC[i]); 
+     }       
+
 
 }
