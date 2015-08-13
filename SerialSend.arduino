@@ -10,6 +10,8 @@ void SendSerial(String message){
   Serial.print("SERIAL-GSM");
   delay(100);
   Serial.print(message);
+  delay(100);
+  Serial.print("EndSrMsg");
 }
 
 void SendLCD(String message){
@@ -18,5 +20,7 @@ void SendLCD(String message){
   Serial.print("SERIAL-LCD");
   delay(100);
   Serial.print(message);
+  delay(100);
+  Serial.print("EndSrMsg");
 
 }
