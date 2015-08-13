@@ -1,0 +1,43 @@
+boolean portOpen = false;
+int portType = -1;
+#portType index: -1 = unconfigured, 1 = generic serial message, 2 = lcd serial message
+
+void setup(){
+  Serial.begin(9600);
+  
+
+}
+
+void loop(){
+  scanSerial();
+
+}
+
+void scanSerial(){
+  if(Serial.available()){
+    delay(10);
+    String input;
+    
+    while(Serial.available()>0){
+      input += char(Serial.read());
+    }
+    processSerial(input);
+  
+  
+  }
+}
+
+void processSerial(String message){
+  if(portOpen = true && portType = 2){
+    lcdWrite(message);
+  }
+  
+  if(portOpen = true && portType = 1){
+    #ProccessingInstructionsForGenericSerialMessage
+  }
+  
+  if(portOpen = False){
+    if(message.equals("
+  }
+
+}
