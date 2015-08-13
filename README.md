@@ -1,4 +1,6 @@
 # Arduino Digital Assistant
+View this file raw for the best viewing experience
+
 This is my personal room/home automation project. It's starting small, maybe it'll go somewhere.
 
 Current Hardware Status:
