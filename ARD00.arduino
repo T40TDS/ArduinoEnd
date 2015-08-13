@@ -6,6 +6,10 @@ void setup(){
   ard01Port.begin(9600);
 }
 
+
+//Implementations Remmaining:
+//Communicate with PC
+//Others; documented on paper
 void SendGenericSerial(String message){
   ard01Port.print("BgSrMsg");
   delay(100);
