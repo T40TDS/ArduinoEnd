@@ -13,6 +13,6 @@ stuff(framework)
 Future Plans:
 Light Control through relays
 Schedule import from google/microsoft and display
-PC-side GUI dashboard
+PC_side GUI dashboard
 Coheisieve wakeup alarm system
 
