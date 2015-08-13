@@ -1,0 +1,22 @@
+void setup(){
+  Serial.begin(9600);
+
+}
+
+
+void SendSerial(String message){
+  Serial.print("BgSrMsg");
+  delay(100);
+  Serial.print("SERIAL-GSM");
+  delay(100);
+  Serial.print(message);
+}
+
+void SendLCD(String message){
+  Serial.print("BgSrMsg");
+  delay(100);
+  Serial.print("SERIAL-LCD");
+  delay(100);
+  Serial.print(message);
+
+}
