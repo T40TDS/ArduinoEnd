@@ -6,6 +6,9 @@ void setup(){
   ard01Port.begin(9600);
 }
 
+void loop(){
+  SendLCD("Testing boop boop");
+}
 
 //Implementations Remmaining:
 //Communicate with PC
